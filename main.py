@@ -25,6 +25,13 @@ try :
 except ValueError:
    print("entrez un adresse valide")
    print("relancer le programme et recommencer ")
+except requests.exceptions.RequestException:
+   print("vous êtes hors ligne")
+   print("connecter vous et ressayer")
+   
+   
+   
+    
    
    
    
