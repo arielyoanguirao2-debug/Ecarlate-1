@@ -22,14 +22,15 @@ def test_unique():
 
 def test_multiple():
    url=input("entrez l'URL a tester : ")
-    test()           
-except ValueError:
-   print("entrez un adresse valide")
-   print("relancer le programme et recommencer ")
-except requests.exceptions.RequestException:
-   print("vous êtes hors ligne")
-   print("connecter vous et ressayer")
-")
+   try:
+     test_multiple()
+   except ValueError:
+     print("entrez une adresse valide")
+     print("relancer le programme et recommencer ")
+   except requests.exceptions.RequestException:
+     print("vous êtes hors ligne")
+     print("connectez-vous et réessayez")
+
    while True:
     requete = requests.get(url, timeout=10)
     if requete.status_code==200:
