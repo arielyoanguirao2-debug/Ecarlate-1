@@ -22,7 +22,6 @@ def test_unique():
 
 def test_multiple():
    url=input("entrez l'URL a tester : ")
-   print("try :
     test()           
 except ValueError:
    print("entrez un adresse valide")
