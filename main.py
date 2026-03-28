@@ -2,7 +2,7 @@ import requests
 import time
 def test_unique():
      url=input("entrez l'URL a tester : ")
-     requete = requests.get(url)
+     requete = requests.get(url,timeout=10)
      
      if requete.status_code==200:
          print("le site est en ligne")
